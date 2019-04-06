@@ -1,3 +1,64 @@
-.error{
+h1{
+  font-family: Georgia;
+  font-size: 32pt;
+  text-align: center;
+  font-weight: lighter;
+}
+
+input{
+  display: block;
+  margin: auto;
+  width: 50%;
+  padding: 10px 5px 10px 5px;
+  border-style: solid;
+  border-color: #5dd55d;
+  border-width: 1px;
+  border-radius: 6px;
+}
+
+input[type=submit]{
+  background-image: linear-gradient(#ffffff, #c2c2d6);
+  background-repeat: no-repeat;
+  background-color: transparent;
+  margin-top: 25px;
+  width: 35%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-family: Georgia;
+  border: solid;
+  border-radius: 40px;
+  border-color: #5dd55d;
+  border-width: 1px;
+
+}
+
+input[type=submit]:hover{
+  background-image: linear-gradient(#ffffff, #b3b3cc);
+}
+
+label{
+  display: block;
+  margin: auto;
+  width: 80%;
+  padding-bottom: 10px;
+  font-family: Georgia;
+  font-variant: small-caps;
+
+}
+
+span{
   color: red;
-  font-family: Arial;}
+  font-family: Arial;
+  display: block;
+  margin: auto;
+  width: 80%;
+}
+
+.form{
+  background-color: #85e085;
+  display: block;
+  margin: auto;
+  width: 50%;
+  padding: 15px 0px 15px 0px;
+  border-radius: 30px;
+}
