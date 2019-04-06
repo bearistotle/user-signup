@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+
+<!-- TODO: Figure out why user_err is eval. as true even when no err (
+this isn't happening to email_err or any other...) -->
+
+{% block content %}
+<h1>Sign Up</h1>
+<form action="/welcome" method="post">
+  <label>Username:
+    <input type="text" name="username" placeholder="Enter Username"
+    value="{{ username }}" />
+  </label><br>
+  {% if user_err %}
+  <span class="error">{{ user_err }}</span><br>
+  {% endif %}<br>
+  <label>Email:
+    <input type="text" name="email" placeholder="(Optional)" value="{{ email }}" />
+  </label><br>
+  {% if email_err %}
+  <span class="error">{{ email_err }}</span><br>
+  {% endif %}<br>
+  <label>Password:
+    <input type="password" name="password" value=""/>
+  </label><br>
+  {% if pass_err %}
+  <span class="error">{{ pass_err }}</span><br>
+  {% endif %}<br>
+  <label>Confirm Password:
+    <input type="password" name="password2" value=""/>
+  </label>
+  <input type="submit" value="Sign Up" />
+</form>
+{% endblock %}
