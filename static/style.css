@@ -39,7 +39,7 @@ input[type=submit]:hover{
 label{
   display: block;
   margin: auto;
-  width: 80%;
+  width: 50%;
   padding-bottom: 10px;
   font-family: Georgia;
   font-variant: small-caps;
