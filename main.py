@@ -75,8 +75,8 @@ def welcome():
     # email validation using regexs (where sensible)
     if re.search(r"\S", email):
 
-        if not re.search("@", email) or not re.search(r"\.", email):
-            email_err_msg = "Email format invalid (missing '@' or '.')."
+        if not re.search(r".*@.*\..*", email):
+            email_err_msg = 'Email format invalid (must be "____@___.___" format).'
 
         elif 3 > len(email) or len(email) > 20:
             email_err_msg = "Email must be 3--20 characters long."
